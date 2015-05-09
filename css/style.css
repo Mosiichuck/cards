@@ -1,0 +1,248 @@
+body{
+	background: url('../img/table.png')no-repeat;
+	width: 960px;
+	height: 640px;
+
+}
+.wrapper {
+	width: 85%;
+	height: 60%;
+	margin: 199px 308px;
+}
+.red {
+	color: red;
+	font-weight: bold;
+}
+.black {
+	color: black;
+	font-weight: bold;
+}
+.card {
+	background: #f3f3f3;
+	border: 1px solid gray;
+	display: inline-block;
+	width:50px;
+	height: 80px;
+	text-align: center;
+	border-radius: 8%;
+	float: left;
+	margin: 5px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: 0.5s;
+
+}
+.high {
+	text-align: left;
+	margin-left: 4px;
+}
+.low {
+	float: right;
+	margin: 19px 33px;
+	-webkit-transform:rotate(180deg);
+}
+
+/*transform*/
+.container {
+	-webkit-perspective: 777px;
+}
+.container:hover .card {
+	-webkit-transform: rotateY(180deg);
+	background: url("../img/beet.png");
+}
+
+.face {
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+}
+.front {
+	z-index: 10;
+}
+
+
+/*heart*/
+.heart {
+	position: relative;
+	width: 20px;
+	height: 16px;
+	margin: 10px 0 0 8px;
+}
+.heart:before,
+.heart:after {
+	position: absolute;
+	content: "";
+	left: 15px;
+	top: 0;
+	width: 15px;
+	height: 25px;
+	background: red;
+	-moz-border-radius: 50px 50px 0 0;
+	border-radius: 50px 50px 0 0;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+}
+.heart:after {
+	left: 0;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;
+	-o-transform-origin: 100% 100%;
+	transform-origin :100% 100%;
+}
+.J {
+	background: url('../img/heartJ.png')no-repeat 0 0;
+}
+.Q {
+	background: url("../img/hQ.png") no-repeat;
+}
+.K{
+	background: url('../img/hK.png') no-repeat;
+}
+
+/*romb*/
+.square {
+	width: 18px;
+	height: 18px;
+	background: red;
+	-webkit-transform:rotate(135deg);
+	margin: 15px 0 0 15px;
+}
+.low2{
+	float: right;
+	margin: 13px 32px;
+	-webkit-transform:rotate(180deg);
+}
+.qJ {
+	background: url("../img/qJ.png")no-repeat;
+}
+.qQ {
+	background: url("../img/qQ.png") no-repeat;
+}
+.qK{
+	background: url('../img/qK.png') no-repeat;
+}
+
+/*black-heart*/
+.black-heart {
+	position: absolute;
+	width: 20px;
+	height: 16px;
+	margin: -11px 35px 12px -5px;;
+	-webkit-transform:rotate(180deg);
+	z-index: 2;
+}
+.black-heart:before,
+.black-heart:after {
+	position: absolute;
+	content: "";
+	left: 15px;
+	top: 0;
+	width: 15px;
+	height: 25px;
+	background: #020101;
+	-moz-border-radius: 50px 50px 0 0;
+	border-radius: 50px 50px 0 0;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+}
+.black-heart:after {
+	left: 0;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;
+	-o-transform-origin: 100% 100%;
+	transform-origin :100% 100%;
+}
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 10px solid #020101;
+	margin: 25px 0 0 16px;
+
+}
+.low3 {
+	float: right;
+	margin: 10px 32px;
+	-webkit-transform: rotate(180deg);
+}
+.bhJ {
+	background: url("../img/bhJ.png")no-repeat;
+}
+.bhQ {
+	background: url("../img/bhQ.png") no-repeat;
+}
+.bhK{
+	background: url('../img/bhK.png') no-repeat;
+}
+
+/*cross*/
+.cross{
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background: #020101;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	margin: -18px 0 0 -7px;
+	z-index: 1;
+}
+
+.cross2 {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background: #020101;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	margin:-9px 0 0 -12px;
+	z-index: 10;
+}
+.cross3 {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background: #020101;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	margin:-9px 0 0 -2px;
+	z-index: 10;
+}
+.cJ {
+	background: url("../img/cJ.png")no-repeat;
+}
+.cQ {
+	background: url("../img/cQ.png") no-repeat;
+}
+.cK{
+	background: url('../img/cK.png') no-repeat;
+}
